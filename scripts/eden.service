@@ -1,0 +1,17 @@
+[Unit]
+Description=EDEN persistent artificial world
+After=graphical.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/eden
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/home/pi/eden/.venv/bin/python /home/pi/eden/run.py --headless
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=30
+KillSignal=SIGTERM
+
+[Install]
+WantedBy=graphical.target

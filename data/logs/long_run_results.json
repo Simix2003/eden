@@ -1,0 +1,22 @@
+{
+  "steps": 10000,
+  "elapsed_seconds": 69.56022690000827,
+  "ticks_per_second": 143.76031312225075,
+  "seed": 314159,
+  "world_size": "128x128",
+  "initial_population": 110,
+  "minimum_population": 37,
+  "maximum_population": 176,
+  "final_population": 123,
+  "population_cap": 260,
+  "events_peak": 32,
+  "events_cap": 300,
+  "metrics_count": 250,
+  "metrics_cap": 720,
+  "memory_start_mb": 36.1015625,
+  "memory_end_mb": 37.2421875,
+  "state_hash": "af5baa85e6423d47961278faf9c736269276a49ef3380cd6d3111ddf795cbe37",
+  "python": "3.12.13",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "validated": true
+}

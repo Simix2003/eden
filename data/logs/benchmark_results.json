@@ -1,0 +1,19 @@
+{
+  "steps": 1500,
+  "elapsed_seconds": 6.338988399977097,
+  "ticks_per_second": 236.63081636265804,
+  "population": 126,
+  "world_size": "128x128",
+  "memory_mb": 39.078125,
+  "python": "3.12.13",
+  "platform": "win32",
+  "operating_system": "Windows-11-10.0.26200-SP0",
+  "machine": "AMD64",
+  "processor": "Intel64 Family 6 Model 198 Stepping 2, GenuineIntel",
+  "seed": 314159,
+  "final_tick": 1500,
+  "state_hash": "6014e70c43a8cee396b978d9f36bf2993c411904e1872cab0a2ba66599469bbb",
+  "render_fps": 248.6233002749913,
+  "render_driver": "dummy",
+  "note": "Development-computer result; Raspberry Pi 5 performance requires on-device verification."
+}

@@ -1,0 +1,54 @@
+[world]
+seed = 314159
+width = 128
+height = 128
+initial_population = 110
+maximum_population = 260
+
+[simulation]
+tick_rate = 8
+ticks_per_day = 480
+season_length_ticks = 7200
+weather_min_ticks = 320
+weather_max_ticks = 1100
+# clear, cloudy, rain, drought, heatwave, cold period
+weather_weights = [0.36, 0.20, 0.22, 0.08, 0.07, 0.07]
+plant_growth_rate = 0.085
+plant_spread_rate = 0.026
+base_metabolism = 0.44
+event_limit = 300
+metric_limit = 720
+
+[evolution]
+mutation_rate = 0.075
+mutation_scale = 0.09
+species_divergence_threshold = 0.18
+reproduction_energy_ratio = 0.68
+reproduction_cooldown_seconds = 60.0
+minimum_reproduction_age_seconds = 20.0
+chosen_advantage = 0.08
+chosen_immortal = false
+
+[persistence]
+database_path = "data/saves/eden.db"
+save_interval_seconds = 30
+retained_snapshots = 5
+offline_catchup_cap_seconds = 3600
+offline_catchup_max_steps = 2400
+
+[ui]
+width = 1440
+height = 900
+render_fps = 30
+fullscreen = false
+ui_scale = 1.0
+performance_mode = "balanced"
+audio_enabled = false
+
+[interventions]
+radius = 8
+rain_strength = 0.32
+drought_strength = 0.28
+plant_strength = 0.55
+fire_strength = 0.85
+temperature_delta = 8.0

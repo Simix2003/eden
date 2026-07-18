@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eden-world"
+version = "0.1.0"
+description = "A deterministic, persistent artificial ecosystem for Raspberry Pi 5"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy==2.0.2",
+  "pygame-ce==2.5.3",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest==8.4.2",
+  "psutil==7.0.0",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+
